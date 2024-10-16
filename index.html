@@ -3,69 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Eletrônicos</title>
+    <title>Loja de Esportes</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Loja</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>                    
-                </ul>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Loja</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Destaques</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
+      </nav>
 
      <header class="container mt-5">
-        <h1 class="text-center">Loja de Calçados</h1>
+        <h1 class="text-center">Loja de Esportes</h1>
      </header>
      <main class="container mt-5">
         <section>
             <h2 class="text-center">Produtos em Destaque</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="card">
-                        <img src="img/produto_01.png" class="card-img-top" alt="...">
+                        <img src="img/tenis1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Tênis</h5>
-                          <p class="card-text">ttew</p>
+                          <h5 class="card-title">Tênis Nike Court Vision Lo - Masculino</h5>
+                          <p class="card-text">De: <del>R$ 599,99</del> <br> <strong>Por 379,99</strong></p>
+                          <a href="https://www.centauro.com.br/tenis-nike-court-vision-lo-masculino-986329.html?cor=51" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="img/tenis2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tênis adidas Grand Court Base 2.0 Feminino</h5>
+                          <p class="card-text">De: <del>R$ 299,99</del><br> <strong>Por R$ 211,00</strong></p>
                           <a href="#" class="btn btn-primary">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                  <div class="col-md-2">
                     <div class="card">
-                        <img src="img/produto_02.png" class="card-img-top" alt="...">
+                        <img src="img/tenis3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Tenis</h5>
-                          <p class="card-text">tte</p>
+                          <h5 class="card-title">Tênis New Balance ML501 - Masculino</h5>
+                          <p class="card-text">De: <del>R$ 399,99</del><br> <strong>Por R$ 299,99</strong></p>
                           <a href="#" class="btn btn-primary">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/produto_03.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tenis</h5>
-                          <p class="card-text">tererew</p>
-                          <a href="#" class="btn btn-primary">Saiba Mais</a>
-                        </div>
+                <div class="col-md-2">
+                  <div class="card">
+                      <img src="img/calca1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Calça Masculina Oxer Elastic</h5>
+                        <p class="card-text"><br>De: <del>R$ 99,99</del><br> <strong>Por R$ 42,21</strong></p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card">
+                    <img src="img/bermuda1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bermuda Masculina Oxer Training 7 Plano</h5>
+                      <p class="card-text">De: <del>R$ 69,99</del><br><strong>Por R$ 37,99</strong></p>
+                      <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                  <img src="img/mochila1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Mochila ASICS Básica</h5>
+                    <p class="card-text"><br> De: <del>R$ 199,99</del><br> <strong>Por R$ 69,49</strong></p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                  </div>
+              </div>
+          </div>
             </div>
         </section>
         <section>
@@ -74,15 +108,11 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <div id="emailHelp" class="form-text"Caso >Digite seu email e digite sua sugestão do que posso melhorar</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <label for="exampleInputPassword1" class="form-label">Sugestão</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
