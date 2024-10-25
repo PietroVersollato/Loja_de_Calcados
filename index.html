@@ -1,150 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Esportes</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Esportes</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Loja</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Destaques</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.centauro.com.br/">Loja Oficial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Loja</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Destaques">Destaques</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.centauro.com.br/">Loja Oficial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contato">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container mt-5">
+    <h1 class="text-center">Loja de Esportes</h1>
+  </header>
+
+  <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/promocao1.jpg" class="d-block w-100 mx-auto" alt="Promoção 1">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/promocao2.jpg" class="d-block w-100 mx-auto" alt="Promoção 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/promocao3.jpg" class="d-block w-100 mx-auto" alt="Promoção 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <main class="container mt-5">
+    <section id="Destaques">
+      <h2 class="text-center">Produtos em Destaque</h2>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/tenis1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tênis Nike Court Vision Lo - Masculino</h5>
+              <p class="card-text">De: <del>R$ 599,99</del> <br> <strong>Por 379,99</strong></p>
+              <a href="https://www.centauro.com.br/tenis-nike-court-vision-lo-masculino-986329.html?cor=51"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
           </div>
         </div>
-      </nav>
-
-     <header class="container mt-5">
-        <h1 class="text-center">Loja de Esportes</h1>
-     </header>
-     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="img/promocao1.jpg" class="d-block w-80" alt="...">
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/tenis2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tênis adidas Grand Court Base 2.0 Feminino</h5>
+              <p class="card-text">De: <del>R$ 299,99</del><br> <strong>Por R$ 211,00</strong></p>
+              <a href="https://www.centauro.com.br/tenis-adidas-grand-court-base-2-0-feminino-990371.html?cor=01"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/promocao2.jpg" class="d-block w-80" alt="...">
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/tenis3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tênis New Balance ML501 - Masculino</h5>
+              <p class="card-text">De: <del>R$ 399,99</del><br> <strong>Por R$ 299,99</strong></p>
+              <a href="https://www.centauro.com.br/tenis-new-balance-ml501-masculino-923441.html?cor=15"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="img/promocao3.jpg" class="d-block w-80" alt="...">
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/calca1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Calça Masculina Oxer Elastic</h5>
+              <p class="card-text"><br>De: <del>R$ 99,99</del><br> <strong>Por R$ 42,21</strong></p>
+              <a href="https://www.centauro.com.br/calca-masculina-oxer-elastic-984826.html?cor=05"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/bermuda1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bermuda Masculina Oxer Training 7 Plano</h5>
+              <p class="card-text">De: <del>R$ 69,99</del><br><strong>Por R$ 37,99</strong></p>
+              <a href="https://www.centauro.com.br/bermuda-masculina-oxer-training-7-tecido-plano-981429.html?cor=83"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card">
+            <img src="img/mochila1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mochila ASICS Básica</h5>
+              <p class="card-text"><br> De: <del>R$ 199,99</del><br> <strong>Por R$ 94,99</strong></p>
+              <a href="https://www.centauro.com.br/mochila-asics-basica-983939.html?cor=NF"
+                class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-     <main class="container mt-5">
-        <section>
-            <h2 class="text-center">Produtos em Destaque</h2>
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="img/tenis1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tênis Nike Court Vision Lo - Masculino</h5>
-                          <p class="card-text">De: <del>R$ 599,99</del> <br> <strong>Por 379,99</strong></p>
-                          <a href="https://www.centauro.com.br/tenis-nike-court-vision-lo-masculino-986329.html?cor=51" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="img/tenis2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tênis adidas Grand Court Base 2.0 Feminino</h5>
-                          <p class="card-text">De: <del>R$ 299,99</del><br> <strong>Por R$ 211,00</strong></p>
-                          <a href="https://www.centauro.com.br/tenis-adidas-grand-court-base-2-0-feminino-990371.html?cor=01" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-2">
-                    <div class="card">
-                        <img src="img/tenis3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tênis New Balance ML501 - Masculino</h5>
-                          <p class="card-text">De: <del>R$ 399,99</del><br> <strong>Por R$ 299,99</strong></p>
-                          <a href="https://www.centauro.com.br/tenis-new-balance-ml501-masculino-923441.html?cor=15" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="card">
-                      <img src="img/calca1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Calça Masculina Oxer Elastic</h5>
-                        <p class="card-text"><br>De: <del>R$ 99,99</del><br> <strong>Por R$ 42,21</strong></p>
-                        <a href="https://www.centauro.com.br/calca-masculina-oxer-elastic-984826.html?cor=05" class="btn btn-primary">Saiba Mais</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card">
-                    <img src="img/bermuda1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Bermuda Masculina Oxer Training 7 Plano</h5>
-                      <p class="card-text">De: <del>R$ 69,99</del><br><strong>Por R$ 37,99</strong></p>
-                      <a href="https://www.centauro.com.br/bermuda-masculina-oxer-training-7-tecido-plano-981429.html?cor=83" class="btn btn-primary">Saiba Mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-              <div class="card">
-                  <img src="img/mochila1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Mochila ASICS Básica</h5>
-                    <p class="card-text"><br> De: <del>R$ 199,99</del><br> <strong>Por R$ 94,99</strong></p>
-                    <a href="https://www.centauro.com.br/mochila-asics-basica-983939.html?cor=NF" class="btn btn-primary">Saiba Mais</a>
-                  </div>
-              </div>
-          </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="text-center mt-5">Contato</h2>
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text"Caso >Digite seu email e sua sugestão do que posso melhorar</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Sugestão</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
-     </main>
-     <footer class="container-fluid mt-5 mb-3">
-        <p>&copy; 2024 - Pietro Versollato</p>
-     </footer>
-    
+    </section>
 
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <section id="Contato">
+      <h2 class="text-center mt-5">Contato</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text" Caso>Digite seu email e sua sugestão do que posso melhorar</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Sugestão</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+  </main>
+  <footer class="container-fluid mt-5 mb-3">
+    <p>&copy; 2024 - Pietro Versollato</p>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
